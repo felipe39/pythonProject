@@ -1,0 +1,37 @@
+#Programa que pede dois parametros ou argumentos e joga como resultado uma operacao aritimetica. Ha o uso de funcoes no codigo, uma funcao para soma e outra para divisao
+
+import sys
+
+def soma(p1,p2):
+
+        try:
+           result = p1+p2
+
+        except ErroSoma:
+           result = "Indefinido"
+
+        return result
+
+def division(p1,p2):
+
+        try:
+           result = p1/p2
+
+        except DivisionError:
+           result = "Indefinido"
+
+        return result
+
+if len(sys.argv) >= 3:
+    if sys.argv[1].isdigit and sys.argv[2].isdigit and sys.argv[2].isdigit != "0":
+        p1 = int(sys.argv[1])
+        p2 = int(sys.argv[2])
+
+        print(p1,"+",p2,"=",soma(p1,p2))
+        print(p1,"/",p2,"=",division(p1,p2))
+    else:
+        print("Digite valores numericos e o segundo numero diferente de 0")
+else:
+    print("Valores numericos maior ou igual a tres")
+
+
