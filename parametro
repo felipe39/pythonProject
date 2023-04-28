@@ -32,6 +32,6 @@ if len(sys.argv) >= 3:
     else:
         print("Digite valores numericos e o segundo numero diferente de 0")
 else:
-    print("Valores numericos maior ou igual a tres")
+    print("Os valores precisam ser numericos!")
 
 
