@@ -1,3 +1,9 @@
+'''
+1.Tupla com meses do ano;
+2.Da entrada com nascimento no formato dd-mm-aaaa
+3.Imprimir apenas o mes
+'''
+
 meses = ('janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro')
 nasc = input('Digite a sua data de nascimento no formato DD-MM-AAAA: ')
 
